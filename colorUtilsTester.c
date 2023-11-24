@@ -174,7 +174,7 @@ int main(int argc, char **argv) {
     numPassed++;
   }
 
-  r = 100, g = 39, b = 40;
+  r = 100, g = 40, b = 40;
   expectedResult = 60;
   printf("TESTING: toGrayScaleAverage(%d,%d,%d): ", r, g, b);
   result = toGrayScaleAverage(r, g, b);
