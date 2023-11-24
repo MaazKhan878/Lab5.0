@@ -192,6 +192,7 @@ int main(int argc, char **argv) {
   //        min(), toGrayScaleLightness(), toGrayScaleLuminosity(),
   //        toSepiaRed(), toSepiaGreen(), toSepiaBlue()
   //       for at least 6 and a total of at least 20
+  
 
   printf("Number Test Cases Passed: %6d\n", numPassed);
   printf("Number Test Cases Failed: %6d\n", numFailed);
