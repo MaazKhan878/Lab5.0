@@ -216,6 +216,19 @@ int main(int argc, char **argv) {
     printf("PASSED\n");
     numPassed++;
   }
+  r = 10; 
+  g = 30;
+  b = 20;
+  printf("TESTING: toGrayScaleLuminosity(%d,%d,%d): ",r,g,b);
+  result = toGrayScaleLuminosity(r,g,b);
+  if(result!=26){
+    printf("Failed: toGrayScaleLuminosity returned %d, Expected 20\n",result);
+    numFailed++;
+  }
+  else{
+    printf("PASSED\n");
+    numPassed++;
+  }
   
 
   printf("Number Test Cases Passed: %6d\n", numPassed);
