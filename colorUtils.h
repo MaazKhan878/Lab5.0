@@ -31,3 +31,4 @@ int toGrayScaleLuminosity(int r, int g, int b);
 int toSepiaRed(int r, int g, int b);
 int toSepiaGreen(int r, int g, int b);
 int toSepiaBlue(int r, int g, int b);
+int min(int x, int y, int z);
