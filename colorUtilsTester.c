@@ -229,6 +229,19 @@ int main(int argc, char **argv) {
     printf("PASSED\n");
     numPassed++;
   }
+   r = 55; 
+   g = 25;
+   b = 10;
+  printf("TESTING: toSepiaRed(%d,%d,%d): ",r,g,b);
+  result = toSepiaRed(r,g,b);
+  if(result!=43){
+    printf("Failed: toSepiaRed( ) returned %d, Expected 90\n",result);
+    numFailed++;
+  }
+  else{
+    printf("PASSED\n");
+    numPassed++;
+  }
   
 
   printf("Number Test Cases Passed: %6d\n", numPassed);
