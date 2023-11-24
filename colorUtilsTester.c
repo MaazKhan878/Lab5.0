@@ -187,6 +187,7 @@ int main(int argc, char **argv) {
     numPassed++;
   }
 
+
   //TODO: add your test cases here:
   //      -at least one for each function
   //        min(), toGrayScaleLightness(), toGrayScaleLuminosity(),
@@ -196,6 +197,19 @@ int main(int argc, char **argv) {
   result = min(x,y,z);
   if(result!=10){
     printf("FAILED: min returned %d, expected 10\n", result);
+    numFailed++;
+  }
+  else{
+    printf("PASSED\n");
+    numPassed++;
+  }
+  r =20;
+  g = 40;
+  b = 60;
+  printf("TESTING: toGrayScaleLightness(%d,%d,%d): ",r,g,b);
+  result = toGrayScaleLightness(r,g,b);
+  if(result!=40){
+    printf("Failed: toGrayScaleLightness returned %d, Expected 40\n",result);
     numFailed++;
   }
   else{
