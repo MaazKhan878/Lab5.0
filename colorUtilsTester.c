@@ -235,13 +235,26 @@ int main(int argc, char **argv) {
   printf("TESTING: toSepiaRed(%d,%d,%d): ",r,g,b);
   result = toSepiaRed(r,g,b);
   if(result!=43){
-    printf("Failed: toSepiaRed( ) returned %d, Expected 90\n",result);
+    printf("Failed: toSepiaRed( ) returned %d, Expected 43\n",result);
     numFailed++;
   }
   else{
     printf("PASSED\n");
     numPassed++;
   }
+  r = 20; g = 45; b =10;
+  printf("TESTING: toSepiaGreen(%d,%d,%d): ",r,g,b);
+  result = toSepiaRed(r,g,b);
+  if(result!=44){
+    printf("Failed: toSepiaGreen() returned %d, Expected 44\n",result);
+    numFailed++;
+  }
+  else{
+    printf("PASSED\n");
+    numPassed++;
+  }
+
+
   
 
   printf("Number Test Cases Passed: %6d\n", numPassed);
