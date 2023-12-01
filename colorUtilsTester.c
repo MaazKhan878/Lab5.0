@@ -179,6 +179,7 @@ int main(int argc, char **argv) {
   printf("TESTING: toGrayScaleAverage(%d,%d,%d): ", r, g, b);
   result = toGrayScaleAverage(r, g, b);
   //TODO: this test case will fail, why?
+  // because we the g value g = 40 not g = 39 i fixed it
   if(result != expectedResult) {
     printf("FAILED: toGrayScaleAverage returned %d, expected %d\n", result, expectedResult);
     numFailed++;
@@ -193,6 +194,8 @@ int main(int argc, char **argv) {
   //        min(), toGrayScaleLightness(), toGrayScaleLuminosity(),
   //        toSepiaRed(), toSepiaGreen(), toSepiaBlue()
   //       for at least 6 and a total of at least 20
+  // The test case test it give the expected value or not
+  x = 10; y = 25; z = 15;
   printf("TESTING: min(%d,%d,%d): ",x,y,z);
   result = min(x,y,z);
   if(result!=10){
@@ -203,7 +206,8 @@ int main(int argc, char **argv) {
     printf("PASSED\n");
     numPassed++;
   }
-  r =20;
+  // Give the value to check the function it give expectet value or not same for other test case 
+  r = 20;
   g = 40;
   b = 60;
   printf("TESTING: toGrayScaleLightness(%d,%d,%d): ",r,g,b);
